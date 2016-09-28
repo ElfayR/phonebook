@@ -1,7 +1,8 @@
 CC ?= gcc
 CFLAGS_common ?= -Wall -std=gnu99
 CFLAGS_orig = -O0
-CFLAGS_opt  = -O0
+CFLAGS_opt  = -O0 -DBINARY_TREE
+#-DBINARY_TREE
 
 EXEC = phonebook_orig phonebook_opt
 all: $(EXEC)

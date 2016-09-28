@@ -4,6 +4,7 @@ OPTIONS="--style=kr --indent=spaces=4 --indent-switches"
 
 RETURN=0
 ASTYLE=$(which astyle)
+
 if [ $? -ne 0 ]; then
     echo "[!] astyle not installed. Unable to check source file format policy." >&2
     exit 1
